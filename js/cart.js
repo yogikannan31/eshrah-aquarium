@@ -3,9 +3,9 @@ function addToCart(name, price, image = "") {
     let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
     cart.push({
-        name,
-        price,
-        image,
+        name: name,
+        price: price,
+        image: image,
         quantity: 1
     });
 
@@ -16,7 +16,9 @@ function addToCart(name, price, image = "") {
 
     updateCartCount();
 
-    alert(name + " added to cart");
+    alert(name + " added to cart successfully!");
+
+    window.location.href = "cart.html";
 }
 
 function updateCartCount() {

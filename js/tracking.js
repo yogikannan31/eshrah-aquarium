@@ -19,3 +19,10 @@ function trackOrder() {
         "Order not found.";
     }
 }
+function completePayment(){
+
+    alert("Payment Successful!");
+
+    window.location.href = "tracking.html";
+
+}
