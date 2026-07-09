@@ -3766,3 +3766,10 @@ footer{
     background:#00c6ff;
     color:white;
 }
+.wishlist-btn{
+    position:absolute;
+    top:15px;
+    right:15px;
+    font-size:24px;
+    cursor:pointer;
+}
