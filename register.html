@@ -1,113 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
+<form id="registerForm">
 
-<head>
+    <input type="text" id="name" placeholder="Full Name" required>
 
-    <meta charset="UTF-8">
+    <input type="email" id="email" placeholder="Email" required>
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <input type="tel" id="phone" placeholder="Phone Number" required>
 
-    <title>Register - ESHRAH AQUARIUM</title>
+    <input type="password" id="password" placeholder="Password" required>
 
-    <link rel="stylesheet" href="login.css">
+    <input type="password" id="confirmPassword"
+           placeholder="Confirm Password" required>
 
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <button type="submit">
+        Register
+    </button>
+    <script src="js/register.js"></script>
 
-</head>
-
-<body>
-
-    <video autoplay muted loop id="bg-video">
-        <source src="videos/fish.mp4" type="video/mp4">
-    </video>
-
-    <div class="overlay"></div>
-
-    <div class="login-container">
-
-        <div class="login-logo">
-
-            <img src="images/logo.png">
-
-            <h1>ESHRAH AQUARIUM</h1>
-
-            <p>Create Your Account</p>
-
-        </div>
-
-        <form action="home.html">
-
-            <div class="input-box">
-
-                <i class="fa-solid fa-user"></i>
-
-                <input type="text"
-                       placeholder="Full Name"
-                       required>
-
-            </div>
-
-            <div class="input-box">
-
-                <i class="fa-solid fa-envelope"></i>
-
-                <input type="email"
-                       placeholder="Email Address"
-                       required>
-
-            </div>
-
-            <div class="input-box">
-
-                <i class="fa-solid fa-phone"></i>
-
-                <input type="tel"
-                       placeholder="Phone Number"
-                       required>
-
-            </div>
-
-            <div class="input-box">
-
-                <i class="fa-solid fa-lock"></i>
-
-                <input type="password"
-                       placeholder="Password"
-                       required>
-
-            </div>
-
-            <div class="input-box">
-
-                <i class="fa-solid fa-lock"></i>
-
-                <input type="password"
-                       placeholder="Confirm Password"
-                       required>
-
-            </div>
-
-            <button class="login-btn">
-                Create Account
-            </button>
-
-        </form>
-
-        <div class="register-link">
-
-            Already have an account?
-
-            <a href="index.html">
-                Login Here
-            </a>
-
-        </div>
-
-    </div>
-    <script src="js/main.js"></script>
-
-</body>
-
-</html>
+</form>

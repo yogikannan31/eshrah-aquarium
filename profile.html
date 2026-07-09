@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile - ESHRAH AQUARIUM</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+
+<div class="profile-container">
+
+    <div class="profile-card">
+
+        <img src="images/user.png" class="profile-image">
+
+        <h1 id="userName">User Name</h1>
+
+        <p id="userEmail">Email Address</p>
+
+        <p id="userPhone">Phone Number</p>
+
+        <p id="userAddress">Address</p>
+
+        <div class="stats">
+
+            <div class="stat-box">
+                <h2 id="orderCount">0</h2>
+                <span>Orders</span>
+            </div>
+
+            <div class="stat-box">
+                <h2 id="wishlistCount">0</h2>
+                <span>Wishlist</span>
+            </div>
+
+        </div>
+
+        <button onclick="logout()">
+            Logout
+        </button>
+
+    </div>
+
+</div>
+
+<script src="js/profile.js"></script>
+
+</body>
+</html>
