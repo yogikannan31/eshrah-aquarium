@@ -1,191 +1,151 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>ESHRAH AQUARIUM - Cart</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 
     <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Poppins, sans-serif;
 
-        body{
-            margin:0;
-            padding:0;
-            font-family:Poppins,sans-serif;
+        background: linear-gradient(135deg, #021b79, #0575e6);
 
-            background:
-            linear-gradient(
-            135deg,
-            #021B79,
-            #0575E6
-            );
+        min-height: 100vh;
+        color: white;
+      }
 
-            min-height:100vh;
-            color:white;
-        }
+      .cart-container {
+        width: 90%;
+        max-width: 1100px;
+        margin: 50px auto;
+      }
 
-        .cart-container{
-            width:90%;
-            max-width:1100px;
-            margin:50px auto;
-        }
+      .cart-title {
+        text-align: center;
+        font-size: 40px;
+        margin-bottom: 40px;
+        color: #00e5ff;
+      }
 
-        .cart-title{
-            text-align:center;
-            font-size:40px;
-            margin-bottom:40px;
-            color:#00e5ff;
-        }
+      .cart-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 
-        .cart-item{
-            display:flex;
-            justify-content:space-between;
-            align-items:center;
+        background: rgba(255, 255, 255, 0.08);
 
-            background:rgba(255,255,255,0.08);
+        padding: 25px;
+        margin-bottom: 20px;
 
-            padding:25px;
-            margin-bottom:20px;
+        border-radius: 20px;
 
-            border-radius:20px;
+        backdrop-filter: blur(15px);
+      }
 
-            backdrop-filter:blur(15px);
-        }
+      .cart-details h3 {
+        margin: 0;
+        color: #00e5ff;
+      }
 
-        .cart-details h3{
-            margin:0;
-            color:#00e5ff;
-        }
+      .cart-details p {
+        margin: 10px 0;
+        color: #dcecf5;
+      }
 
-        .cart-details p{
-            margin:10px 0;
-            color:#dcecf5;
-        }
+      .quantity {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+      }
 
-        .quantity{
-            display:flex;
-            gap:10px;
-            align-items:center;
-        }
+      .quantity button {
+        width: 35px;
+        height: 35px;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
 
-        .quantity button{
-            width:35px;
-            height:35px;
-            border:none;
-            border-radius:50%;
-            cursor:pointer;
+        background: #00c6ff;
+        color: white;
+        font-size: 18px;
+      }
 
-            background:#00c6ff;
-            color:white;
-            font-size:18px;
-        }
+      .remove-btn {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 30px;
+        background: red;
+        color: white;
+        cursor: pointer;
+      }
 
-        .remove-btn{
-            padding:10px 20px;
-            border:none;
-            border-radius:30px;
-            background:red;
-            color:white;
-            cursor:pointer;
-        }
+      .cart-summary {
+        text-align: right;
+        margin-top: 40px;
+      }
 
-        .cart-summary{
-            text-align:right;
-            margin-top:40px;
-        }
+      .cart-summary h2 {
+        color: #00ffb3;
+      }
 
-        .cart-summary h2{
-            color:#00ffb3;
-        }
+      .cart-buttons {
+        margin-top: 30px;
+        display: flex;
+        justify-content: flex-end;
+        gap: 20px;
+      }
 
-        .cart-buttons{
-            margin-top:30px;
-            display:flex;
-            justify-content:flex-end;
-            gap:20px;
-        }
-
-        .cart-buttons a{
-            text-decoration:none;
-            padding:15px 30px;
-            border-radius:30px;
-            color:white;
-            background:
-            linear-gradient(
-            135deg,
-            #00c6ff,
-            #0072ff
-            );
-        }
-
+      .cart-buttons a {
+        text-decoration: none;
+        padding: 15px 30px;
+        border-radius: 30px;
+        color: white;
+        background: linear-gradient(135deg, #00c6ff, #0072ff);
+      }
     </style>
+  </head>
 
-</head>
+  <body>
+    <div class="cart-container">
+      <h1 class="cart-title">🛒 Your Shopping Cart</h1>
 
-<body>
+      <div id="cart-items"></div>
 
-<div class="cart-container">
-
-    <h1 class="cart-title">
-        🛒 Your Shopping Cart
-    </h1>
-
-    <div id="cart-items">
-
-    </div>
-
-    <div class="cart-summary">
-
-        <h2 id="total-price">
-            Total: ₹0
-        </h2>
+      <div class="cart-summary">
+        <h2 id="total-price">Total: ₹0</h2>
 
         <div class="cart-buttons">
+          <a href="products.html"> Continue Shopping </a>
 
-            <a href="products.html">
-                Continue Shopping
-            </a>
-
-            <a href="payment.html">
-                Proceed to Payment
-            </a>
-            <a href="cart.html">
-    🛒 Cart
-    <span id="cart-count">0</span>
-</a>
-
+          <a href="payment.html"> Proceed to Payment </a>
+          <a href="cart.html">
+            🛒 Cart
+            <span id="cart-count">0</span>
+          </a>
         </div>
-
+      </div>
     </div>
 
-</div>
+    <script>
+      let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-<script>
+      function renderCart() {
+        let container = document.getElementById("cart-items");
 
-let cart =
-JSON.parse(
-localStorage.getItem("cart")
-) || [];
+        let total = 0;
 
-function renderCart(){
+        container.innerHTML = "";
 
-    let container =
-    document.getElementById("cart-items");
+        cart.forEach((item, index) => {
+          total += item.price;
 
-    let total = 0;
-
-    container.innerHTML="";
-
-    cart.forEach((item,index)=>{
-
-        total += item.price;
-
-        container.innerHTML +=
-        `
+          container.innerHTML += `
         <div class="cart-item">
 
             <div class="cart-details">
@@ -205,33 +165,23 @@ function renderCart(){
 
         </div>
         `;
-    });
+        });
 
-    document.getElementById(
-    "total-price"
-    ).innerHTML=
-    "Total: ₹"+total;
+        document.getElementById("total-price").innerHTML = "Total: ₹" + total;
+      }
 
-}
+      function removeItem(index) {
+        cart.splice(index, 1);
 
-function removeItem(index){
+        localStorage.setItem("cart", JSON.stringify(cart));
 
-    cart.splice(index,1);
+        renderCart();
+      }
 
-    localStorage.setItem(
-    "cart",
-    JSON.stringify(cart)
-    );
+      renderCart();
+    </script>
 
-    renderCart();
-
-}
-
-renderCart();
-
-</script>
-
-<script src="js/main.js"></script>
-
-</body>
+    <script src="js/main.js"></script>
+  </body>
 </html>
+
