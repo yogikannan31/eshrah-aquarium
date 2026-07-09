@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Products | ESHRAH AQUARIUM</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- Background Video -->
+
+    <video id="bg-video" autoplay muted loop playsinline>
+        <source src="videos/fish1.mp4" type="video/mp4">
+    </video>
+
+    <div class="overlay"></div>
+
+    <!-- Navbar -->
+
+    <header class="glass-header">
+
+        <div class="logo-container">
+
+            <img src="images/logo.png"
+                 class="logo"
+                 alt="ESHRAH Aquarium">
+
+            <div class="logo-text">
+                <h2>ESHRAH</h2>
+                <span>AQUARIUM</span>
+            </div>
+
+        </div>
+
+        <nav>
+
+            <ul>
+
+                <li><a href="home.html">Home</a></li>
+
+                <li><a href="about.html">About</a></li>
+
+                <li>
+                    <a href="products.html"
+                       class="active">
+                       Products
+                    </a>
+                </li>
+
+                <li><a href="payment.html">Payment</a></li>
+
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- Hero Section -->
+
+    <section class="products-hero">
+
+        <div class="hero-content">
+
+            <h1>
+                Discover Your Dream Aquarium
+            </h1>
+
+            <p>
+
+                Explore premium fish, tanks,
+                aquatic plants and accessories
+                for every aquarium enthusiast.
+
+            </p>
+
+            <div class="search-box">
+
+                <input type="text"
+                       placeholder="Search Fish, Tanks, Accessories...">
+
+                <button>
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+   
+<div class="products-grid">
+
+    <!-- Fish -->
+    <div class="product-card fish">
+        <div class="wishlist">
+            ❤️
+        </div>
+        <img src="images/gold fish.webp">
+        <h3>Gold Fish</h3>
+        <div class="rating">
+            ⭐⭐⭐⭐⭐
+            <span>(4.9)</span>
+        </div>
+        <p>₹499</p>
+        <button onclick="addToCart('Gold Fish',499)">
+            Add to Cart
+        </button>
+    </div>
+
+    <div class="product-card fish">
+        <div class="wishlist">
+            ❤️
+        </div>
+        <img src="images/betta.jpg">
+        <h3>Betta Fish</h3>
+        <div class="rating">
+            ⭐⭐⭐⭐⭐
+            <span>(4.9)</span>
+        </div>
+        <p>₹699</p>
+        <button onclick="addToCart('Betta Fish',699)">
+            Add to Cart
+        </button>
+    </div>
+
+    <!-- Plants -->
+    <div class="product-card plant">
+        <div class="wishlist">
+            ❤️
+        </div>
+        <img src="images/javafern.jpg">
+        <h3>Java Fern</h3>
+        <div class="rating">
+            ⭐⭐⭐⭐⭐
+            <span>(4.9)</span>
+        </div>
+        <p>₹249</p>
+        <button onclick="addToCart('Java Fern',249)">
+            Add to Cart
+        </button>
+    </div>
+
+    <div class="product-card plant">
+        <div class="wishlist">
+             ❤️
+        </div>
+        <img src="images/anubias.jpg">
+        <h3>Anubias Nana</h3>
+        <div class="rating">
+            ⭐⭐⭐⭐⭐
+            <span>(4.9)</span>
+        </div>
+        <p>₹299</p>
+        <button onclick="addToCart('Anubias Nana',299)">
+            Add to Cart
+        </button>
+    </div>
+
+    <!-- Aquarium -->
+
+
+</div>
+
+    
+    <!-- ================= FEATURED PRODUCTS ================= -->
+
+<section class="featured-products">
+
+    <div class="section-title">
+
+        <h1>Featured Products</h1>
+
+        <p>
+            Handpicked premium products for aquarium lovers.
+        </p>
+
+    </div>
+
+    <div class="product-container">
+
+        <div class="product-card">
+            <div class="wishlist">
+                ❤️
+            </div>
+
+            <img src="images/gold fish.webp" alt="Gold Fish">
+
+            <div class="product-content">
+
+                <span class="category">Premium Fish</span>
+
+                <h2>Golden Oranda</h2>
+                <div class="rating">
+                    ⭐⭐⭐⭐⭐
+                    <span>(4.9)</span>
+                </div>
+
+                <p>
+                    Healthy imported ornamental goldfish.
+                </p>
+
+                <div class="price-row">
+
+                    <h3>₹799</h3>
+
+                <button onclick="addToCart('Gold Fish',799)">
+                      Add to Cart
+                </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="product-card">
+            <div class="wishlist">
+                ❤️
+            </div>
+
+            <img src="images/betta.jpg" alt="Betta Fish">
+
+            <div class="product-content">
+
+                <span class="category">Tropical Fish</span>
+
+                <h2>Halfmoon Betta</h2>
+                <div class="rating">
+                    ⭐⭐⭐⭐⭐
+                    <span>(4.9)</span>
+                </div>
+
+                <p>
+                    Colorful and elegant fighting fish.
+                </p>
+
+                <div class="price-row">
+
+                    <h3>₹499</h3>
+
+                <button onclick="addToCart('Bette Fish',499)">
+                    Add to Cart
+                </button>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="product-card">
+            <div class="wishlist">
+                ❤️
+            </div>
+
+            <img src="images/arowana.jpg" alt="Arowana">
+
+            <div class="product-content">
+
+                <span class="category">Premium Fish</span>
+
+                <h2>Arowana</h2>
+                <div class="rating">
+                    ⭐⭐⭐⭐⭐
+                    <span>(4.9)</span>
+                </div>
+
+                <p>
+                    Beautiful imported freshwater fish.
+                </p>
+
+                <div class="price-row">
+
+                    <h3>₹4,999</h3>
+
+                    <button onclick="addToCart('Arowana',4,999)">
+                         Add to Cart
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= AQUARIUM TANKS ================= -->
+
+<section class="tank-section">
+
+    <div class="section-title">
+
+        <h1>Premium Aquarium Tanks</h1>
+
+        <p>
+            Elegant glass aquariums for your home and office.
+        </p>
+
+    </div>
+
+    <div class="product-container">
+
+        <div class="product-card">
+            <div class="wishlist">
+                ❤️
+            </div>
+
+            <img src="images/tank.jpg" alt="Tank">
+
+            <div class="product-content">
+
+                <span class="category">Aquarium</span>
+
+                <h2>60L Glass Aquarium</h2>
+                <div class="rating">
+                    ⭐⭐⭐⭐⭐
+                    <span>(4.9)</span>
+                </div>
+
+                <p>
+                    Perfect for beginners and small fish collections.
+                </p>
+
+                <div class="price-row">
+
+                    <h3>₹3,999</h3>
+
+                <button onclick="addToCart('60L Glass Aquarium',3999)">
+                    Add to Cart
+                </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="product-card">
+            <div class="wishlist">
+                ❤️
+            </div>
+
+            <img src="images/120 tank.jpg" alt="Tank">
+
+            <div class="product-content">
+
+                <span class="category">Aquarium</span>
+
+                <h2>120L Premium Tank</h2>
+                <div class="rating">
+                    ⭐⭐⭐⭐⭐
+                    <span>(4.9)</span>
+                </div>
+
+                <p>
+                    Crystal clear glass with cabinet support.
+                </p>
+
+                <div class="price-row">
+
+                    <h3>₹8,999</h3>
+
+                <button onclick="addToCart('120L Premium Tank',8999)">
+                    Add to Cart
+                </button>
+                </div>
+
+            </div>
+
+        </div>
+        
+
+        <div class="product-card">
+            <div class="wishlist">
+                 ❤️
+            </div>
+
+            <img src="images/lux.jpg" alt="Tank">
+
+            <div class="product-content">
+
+                <span class="category">Aquarium</span>
+
+                <h2>Luxury Aquascape Tank</h2>
+                <div class="rating">
+                    ⭐⭐⭐⭐⭐
+                    <span>(4.7)</span>
+                </div>    
+
+
+                <p>
+                    Premium tank for aquascaping enthusiasts.
+                </p>
+
+                <div class="price-row">
+
+                    <h3
+                                        <h3>₹14,999</h3>
+
+                <button onclick="addToCart('Luxury Aquascape Tank',14999)">
+                    Add to Cart
+                </button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ACCESSORIES SECTION ================= -->
+
+<section class="accessories-section">
+
+    <div class="section-title">
+
+        <h1>Aquarium Accessories</h1>
+
+        <p>
+            Everything you need for a healthy and beautiful aquarium.
+        </p>
+
+    </div>
+
+    <div class="product-container">
+
+        <div class="product-card">
+            <div class="wishlist">
+                ❤️
+            </div>
+
+            <img src="images/fliter.jpg" alt="Filter">
+
+            <div class="product-content">
+
+                <span class="category">Accessory</span>
+
+                <h2>External Filter</h2>
+                <div class="rating">
+                    ⭐⭐⭐⭐⭐
+                    <span>(4.9)</span>
+                </div>
+
+                <p>
+                    Powerful filtration system for crystal clear water.
+                </p>
+
+                <div class="price-row">
+
+                    <h3>₹1,999</h3>
+
+                <button onclick="addToCart('External Filter',1999)">
+                    Add to Cart
+                </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="product-card">
+            <div class="wishlist">
+                ❤️
+            </div>
+
+            <img src="images/led.jpg" alt="Light">
+
+            <div class="product-content">
+
+                <span class="category">Lighting</span>
+
+                <h2>LED Aquarium Light</h2>
+                <div class="rating">
+                    ⭐⭐⭐⭐⭐
+                    <span>(4.8)</span>
+                </div>
+
+                <p>
+                    Enhance fish colors and plant growth.
+                </p>
+
+                <div class="price-row">
+
+                    <h3>₹1,299</h3>
+
+                <button onclick="addToCart('LED Aquarium Light',1299)">
+                    Add to Cart
+                </button>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="product-card">
+            <div class="wishlist">
+                ❤️
+            </div>
+
+            <img src="images/product1.jpg" alt="Unique Bot">
+
+            <div class="product-content">
+
+                <span class="category">Equipment</span>
+
+                <h2>Unique Bot</h2>
+                <div class="rating">
+                    ⭐⭐⭐⭐⭐
+                    <span>(4.9)</span>
+                </div>
+
+                <p>
+                    Maintains ideal water temperature for tropical fish.
+                </p>
+
+                <div class="price-row">
+
+                    <h3>₹899</h3>
+
+                <button onclick="addToCart('Unique Bot',899)">
+                    Add to Cart
+                </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= SPECIAL OFFER ================= -->
+
+<section class="offer-banner">
+
+    <div class="offer-content">
+
+        <h1>Summer Aquarium Sale</h1>
+
+        <h2>Up To 30% OFF</h2>
+
+        <p>
+            Premium fish, aquariums and accessories at special prices.
+        </p>
+
+        <a href="payment.html" class="offer-btn">
+            Shop Now
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CUSTOMER REVIEWS ================= -->
+
+<section class="reviews-section">
+
+    <div class="section-title">
+
+        <h1>Customer Reviews</h1>
+
+    </div>
+
+    <div class="review-container">
+
+        <div class="review-card">
+
+            <h3>⭐⭐⭐⭐⭐</h3>
+
+            <p>
+                "Amazing quality fish and very healthy delivery."
+            </p>
+
+            <h4>- Arjun</h4>
+
+        </div>
+
+        <div class="review-card">
+
+            <h3>⭐⭐⭐⭐⭐</h3>
+
+            <p>
+                "Beautiful aquarium setup for my office."
+            </p>
+
+            <h4>- Priya</h4>
+
+        </div>
+
+        <div class="review-card">
+
+            <h3>⭐⭐⭐⭐⭐</h3>
+
+            <p>
+                "Best aquarium store experience in Coimbatore."
+            </p>
+
+            <h4>- Karthik</h4>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-box">
+
+            <h2>ESHRAH AQUARIUM</h2>
+
+            <p>
+                Premium fish, aquariums and accessories for your dream underwater world.
+            </p>
+
+        </div>
+
+        <div class="footer-box">
+
+            <h2>Quick Links</h2>
+
+            <ul>
+
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="payment.html">Payment</a></li>
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+
+        </div>
+
+        <div class="footer-box">
+
+            <h2>Contact</h2>
+
+            <p>📍 Coimbatore, Tamil Nadu</p>
+            <p>📞 +91 9080885838</p>
+            <p>✉️ yyogi9064@gmail.com</p>
+
+        </div>
+
+        <div class="footer-box">
+
+            <h2>Follow Us</h2>
+
+            <div class="social-icons">
+
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+                <a href="#"><i class="fab fa-instagram"></i></a>
+
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+
+                <a href="#"><i class="fab fa-youtube"></i></a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <hr>
+
+    <p class="copyright">
+
+        © 2026 ESHRAH AQUARIUM | All Rights Reserved
+
+    </p>
+
+</footer>
+
+
+<!-- ================= FLOATING BUTTONS ================= -->
+
+<a href="https://wa.me/919080885838"
+   class="whatsapp-btn">
+
+    <i class="fab fa-whatsapp"></i>
+
+</a>
+
+<button id="topBtn">
+
+    <i class="fa-solid fa-arrow-up"></i>
+
+</button>
+<input type="text"
+       id="searchInput"
+       placeholder="Search products..."
+       onkeyup="searchProducts()">
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
